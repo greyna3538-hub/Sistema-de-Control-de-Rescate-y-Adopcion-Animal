@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para registrar animales rescatados">
+    <title>Reportar un animal - Sistema de Rescate Animal</title>
+</head>
+
+<body>
+
+    <header>
+        <p>
+            <img src="assets/img/logo.jpeg" alt="Logo oficial de GonRey" width="100">
+        </p>
+         <p><strong>GonRey</strong></p>
+         <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+         <p>Protegiendo y ayudando a los animales que necesitan rescate.</p>
+    </header>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar un animal</a></li>
+            <li><a href="rescates.html">Consultar rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section aria-labelledby="titulo-formulario">
+
+            <h2 id="titulo-formulario">
+                Formulario de ingreso de un animal rescatado
+            </h2>
+
+            <article>
+
+                <h3>Datos del caso de rescate</h3>
+
+                <p>
+                    Complete los siguientes campos con la información
+                    del animal que necesita ayuda.
+                </p>
+
+                <form action="#" method="get">
+
+                    <p>
+                        <label for="titulo">
+                            Título del caso o nombre provisional:
+                        </label>
+
+                        <input type="text"
+                               id="titulo"
+                               name="titulo"
+                               placeholder="Ingrese el nombre o título del caso"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="categoria">
+                            Categoría del animal:
+                        </label>
+
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="perros">Perros</option>
+                            <option value="gatos">Gatos</option>
+                            <option value="fauna-silvestre">Fauna silvestre</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+
+                        <legend>Nivel de urgencia médica:</legend>
+
+                        <input type="radio"
+                               id="alta"
+                               name="urgencia"
+                               value="Alta"
+                               required>
+                        <label for="alta">Alta</label>
+
+                        <input type="radio"
+                               id="media"
+                               name="urgencia"
+                               value="Media">
+                        <label for="media">Media</label>
+
+                        <input type="radio"
+                               id="baja"
+                               name="urgencia"
+                               value="Baja">
+                        <label for="baja">Baja</label>
+
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">
+                            Descripción del estado en que se encontró:
+                        </label>
+                    </p>
+
+                    <p>
+                        <textarea id="descripcion"
+                                  name="descripcion"
+                                  rows="6"
+                                  cols="50"
+                                  placeholder="Describa el estado del animal rescatado..."
+                                  required></textarea>
+                    </p>
+
+                    <button type="submit">Enviar reporte</button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal.</p>
+        <p>Proyecto académico - Universidad Técnica de Manabí.</p>
+        <p>Todos los derechos reservados &copy; 2026.</p>
+    </footer>
+
+</body>
+
+</html>
+
